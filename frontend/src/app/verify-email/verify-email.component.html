@@ -1,0 +1,17 @@
+<div class="error" *ngIf="view === 1">
+    <div><img src="assets/cross.png" class="error-image"></div>
+    <div class="error-message">{{message}}</div>
+    <div class="resend-button" *ngIf="!isError">
+        <button class="submit" mat-raised-button [disabled]="loading" [class.spinner]="loading"
+                (click)="resendToken()">{{'Resend link' | translate}}
+        </button>
+    </div>
+</div>
+
+<div class="success" *ngIf="view === 2">
+    <div><img src="assets/tick.png" class="success-image"></div>
+    <div class="success-message">
+        {{'Link for veifying email adress was sent' | translate}}<br>{{'to your email-box!' | translate}}
+    </div>
+    <div class="homepage-link"><a href="home" class="homepage-link">{{'GoToTheHomepage' | translate}}</a></div>
+</div>

@@ -1,0 +1,88 @@
+.container {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+ul.container {
+  margin-top: 120px;
+}
+
+button.submit {
+  color: white;
+  background-color: #3F51B5;
+}
+
+.label {
+  margin-top: 70px;
+  font-size: 19px;
+}
+
+li.name-block {
+  margin-top: 25px;
+}
+
+li.buttons-block {
+  margin-top: 45px;
+}
+
+.success {
+  margin-top: 140px;
+  text-align: center;
+}
+
+div.success-message {
+  margin-top: 20px;
+  font-size: medium;
+  color: #24B05B;
+}
+
+div.homepage-link {
+  margin-top: 20px;
+}
+
+a.homepage-link {
+  color: #FF4081;
+  text-decoration: none;
+}
+
+.success-image {
+  width: 150px;
+  height: auto;
+}
+
+li {
+  list-style-type: none;
+}
+
+ul {
+  margin-left: 0;
+  padding-left: 0;
+}
+
+.card {
+  max-width: 450px;
+}
+
+@keyframes spinner {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.spinner:before {
+  content: '';
+  box-sizing: border-box;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 20px;
+  height: 20px;
+  margin-top: -10px;
+  margin-left: -10px;
+  border-radius: 50%;
+  border: 2px solid #ffffff;
+  border-top-color: #3F51B5;
+  animation: spinner .8s linear infinite;
+}
